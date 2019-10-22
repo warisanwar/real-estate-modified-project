@@ -34,6 +34,7 @@ export class PropertyListingsProvider extends React.Component {
   state = DefaultState
 
   componentDidMount() {
+    
     fetch('/server/listings.json')
       .then(res => res.json())
       .then(res => {

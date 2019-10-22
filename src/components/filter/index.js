@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from 'react'
 import classnames from 'classnames'
-
+import { navigate } from "@reach/router"
 
 import styles from './styles.module.css'
 
@@ -35,7 +35,7 @@ class Filter extends React.Component {
   handleSubmit = (event) => {  
     event.preventDefault();
     this.props.updateFilter(this.state);
-    this.props.history.push(`/listings`)
+    navigate(`/listings`) //navigates on submit
   }
 
   render() {
