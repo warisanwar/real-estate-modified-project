@@ -9,12 +9,6 @@ function getSortOrderValue(sortOrder) {
   return sortOrder.replace(' ', '').toLowerCase()
 }
 
-function getPropertiesDisplayText(count) {
-  if (count > 1 || count === 0) {
-    return 'properties'
-  }
-  return 'property'
-}
 
 const DefaultState = {
   priceFrom: '',
@@ -48,7 +42,7 @@ class Filter extends React.Component {
       <aside className="mt-2">
         <div className={containerClasses}>
           <h2 data-cy="property-count">
-            {`${count} private ${getPropertiesDisplayText(count)} for sale`}
+            Search and filter for your property
           </h2>
           <form
             onSubmit={this.handleSubmit}
