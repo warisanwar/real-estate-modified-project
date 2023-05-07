@@ -63,7 +63,7 @@
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-static-files-copy": "^2.0.0",
-    "postcss-modules": "^1.4.1",
+    "postcss-modules": "^1.5.0",
     "prettier": "^1.16.0",
     "react-hot-loader": "^4.6.3",
     "react-test-renderer": "^16.7.0",
